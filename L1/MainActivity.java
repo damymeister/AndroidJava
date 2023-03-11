@@ -10,7 +10,6 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.myapplication.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
         nameEditText = findViewById(R.id.nameEditText);
         surnameEditText = findViewById(R.id.surnameEditText);
-        gradesEditText = findViewById(R.id.gradesEditText);
+        gradesEditText = findViewById(R.id.gradeEditText);
 
-        gradesButton = findViewById(R.id.gradesButton);
+        gradesButton = findViewById(R.id.gradeButton);
         gradesButton.setVisibility(View.INVISIBLE);
 
         nameEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
