@@ -2,51 +2,80 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    
-    <TextView
-        android:text="Imię:"
-        android:textSize="18sp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imię:"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/nameTextView"
+            />
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wprowadz imie"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/nameTextView"
+            />
 
-    <EditText
-        android:id="@+id/nameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Wprowadź imię" />
-
-    <TextView
-        android:text="Nazwisko:"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"
+    </RelativeLayout>
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:id="@+id/surnameEditText"
-        android:hint="Wprowadź nazwisko"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:text="Liczba ocen:"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nazwisko:"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/surnameTextView"
+            />
+        <EditText
+            android:id="@+id/surnameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wprowadz nazwisko"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/surnameTextView"
+            />
+    </RelativeLayout>
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:id="@+id/gradesEditText"
-        android:hint="Wprowadź liczbę ocen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liczba ocen:"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/gradeTextView"
+            />
+        <EditText
+            android:id="@+id/gradeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wprowadz liczbe ocen"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/gradeTextView"
+            />
+    </RelativeLayout>
     <Button
-        android:id="@+id/gradesButton"
-        android:text="Oceny"
-        android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="wrap_content"
+        android:text="Oceny"
+        android:id="@+id/gradeButton"
+        android:layout_gravity="center"
+        android:layout_marginTop="16sp"
+        />
 </LinearLayout>
